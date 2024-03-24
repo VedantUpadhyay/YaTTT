@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon-nobg.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="description" content="YaTTT - Yet another tic tac toe is a game you can play with friends, family and even AI. The game also incorporates difficulty levels, easy, medium, hard, and IMPOSSIBLE!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>YaTTT</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://raw.githubusercontent.com/bitwiseshiftleft/sjcl/master/sjcl.js"></script> -->
+</head>
+
+<body>
+    <div id="footer">
+        Made with ❤️ by <a href="https://www.linkedin.com/in/vedant-upadhyay/" target="_blank">Vedant Upadhyay</a>
+    </div>
+    <div class="center">
+        <div id="options">
+            <button class="btn" id="new-game-btn">NEW GAME</button>
+            <div id="choose-player">
+                <button id="player_x" class="btn btn-large btn-stocky">X</button>
+                <button id="player_o" class="btn btn-large btn-stocky">O</button>
+            </div>
+            <div id="difficulties">
+                <button id="ez" class="btn btn-large">EASY</button>
+                <button id="med" class="btn btn-large">MEDIUM</button>
+                <button id="hd" class="btn btn-large">HARD</button>
+            </div>
+            <button id="imp" class="btn btn-large">IMPOSSIBLE</button>
+        </div>
+        <div id="message" class="hidden"></div>
+        <div id="board">
+            <div class="br-bottom br-right">
+                <div id="1" class="cell"></div>
+            </div>
+            <div class="br-left br-bottom br-right">
+                <div id="2" class="cell"></div>
+            </div>
+            <div class="br-left br-bottom">
+                <div id="3" class="cell"></div>
+            </div>
+            <div class="br-top br-bottom br-right">
+                <div id="4" class="cell"></div>
+            </div>
+            <div class="br-top br-bottom br-left br-right">
+                <div id="5" class="cell"></div>
+            </div>
+            <div class="br-top br-left br-bottom">
+                <div id="6" class="cell"></div>
+            </div>
+            <div class="br-top br-right">
+                <div id="7" class="cell"></div>
+            </div>
+            <div class="br-top br-left br-right">
+                <div id="8" class="cell"></div>
+            </div>
+            <div class="br-left br-top">
+                <div id="9" class="cell"></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

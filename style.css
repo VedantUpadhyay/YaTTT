@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Open sans', 'Segoe UI', sans-serif;
+    outline: none;
+    user-select: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --border-size: 0.21rem;
+}
+
+#new-game-btn {
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.center {
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#message {
+   font-weight: bolder;
+   font-size: 150% !important;
+   text-align: center;
+   height: 5vh;
+   width: 100%;
+   padding-top: 1%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.33em;
+    transform: translateX(-50%);
+    font-family: monospace !important;
+}
+
+#footer * {
+    font-family: monospace !important;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 7rem);
+    grid-template-rows: repeat(3, 7rem);
+    margin-top: 2.5%;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3, 5.5rem);
+        grid-template-rows: repeat(3, 5.5rem);
+        margin-top: 4.5%;
+        font-size: 3rem;
+    }
+  }
+
+#difficulties {
+    padding-top: 1%;
+}
+
+#difficulties .btn {
+    margin: 0.5rem;
+}
+
+#difficulties #imp {
+    display: block;
+}
+
+.btn-stocky {
+    padding: 0.1rem 1rem !important;
+}
+
+.btn-large {
+    font-weight: bold;
+    font-size: larger;
+}
+
+#choose-player {
+    padding-top: 5%;
+}
+
+#choose-player .btn {
+    padding: 0.5rem;
+    font-size: x-large;
+}
+/*
+#choose-player .btn.btn-selected {
+    background-color: lime;
+    color: whitesmoke;
+}
+
+#imp.btn-selected {
+    background-color: darkmagenta;
+    color: white;
+}
+
+#ez.btn-selected {
+    background-color: lawngreen;
+    color: navy;
+}
+
+#med.btn-selected {
+    background-color: darkorange;
+    color: white;
+}
+
+#hd.btn-selected {
+    background-color: darkred;
+    color: white;
+}
+*/
+.btn-selected {
+    background-color: black;
+    color: white;
+}
+
+.br-bottom {
+    border-bottom: var(--border-size) solid #000 !important;
+}
+
+.br-left {
+    border-left: var(--border-size) solid #000 !important;
+}
+
+.br-right {
+    border-right: var(--border-size) solid #000 !important;
+}
+
+.br-top {
+    border-top: var(--border-size) solid #000 !important;
+}
+
+#board div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    cursor: pointer;
+    color: #000;
+    background: none;
+    border: none;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#options {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.btn {
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
