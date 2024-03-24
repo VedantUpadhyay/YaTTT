@@ -7,4 +7,4 @@ Currently this Tic-Tac-Toe game allows human players to: -
      Hard
      IMPOSSIBLE
 
-     *Search depth constraints faciliate the difficulty levels game-playing!
+     *Search depth constraints facilitate the difficulty levels game-playing!
